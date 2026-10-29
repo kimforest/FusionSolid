@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fusion2solid"
+version = "0.1.0"
+description = "Migrate a parametric design history from Autodesk Fusion 360 (Fusion Desktop MCP) into SolidCraft (SolidCraft MCP)."
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+fusion2solid = "fusion2solid.cli:main"
+
+[tool.setuptools]
+packages = ["fusion2solid"]
